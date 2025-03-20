@@ -56,7 +56,7 @@ const FooterComponent = () => {
               <ul className="flex justify-center gap-4 mt-8 lg:justify-start">
                 <li>
                   <Link
-                  to= {"https://www.facebook.com/"}
+                  to= {"https://www.facebook.com/profile.php?id=100090253182276"}
                     target="_blank"
                     className="transition duration-300 text-zinc-300 hover:text-Primary"
                   >
