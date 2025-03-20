@@ -1,0 +1,19 @@
+# Dependency directories
+node_modules/
+
+# Build directories
+build/
+dist/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Temporary files
+*.tmp
+*.swp
+
+# Ignore video files
+*.mp4
