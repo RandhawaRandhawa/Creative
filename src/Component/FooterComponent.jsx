@@ -261,7 +261,7 @@ const FooterComponent = () => {
           </div>
           <div className="pb-20 ">
             <p className="text-lg font-medium tracking-wide font-sora text-White">
-            <span className="text-Primary">&copy;</span> Copyright 2025, All rights reserved by <span className="text-Primary"> Creative.W.A</span> 
+            <span className="text-Primary">&copy;</span> Copyright 2025, All rights reserved by <span className="text-Primary"> Developer</span>. 
             </p>
           </div>
         </div>

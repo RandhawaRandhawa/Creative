@@ -12,13 +12,6 @@ import ContactUsPageComponent from "./Pages/ContactPage/ContactUsPageComponent";
 import PricingPageComponent from "./Pages/PricingPage/PricingPageComponent";
 
 const App = () => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.25;
-    }
-  }, []);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,27 +22,22 @@ const App = () => {
 
   return (
     <Router>
-      {loading ? ( 
+      {loading ? (
         <div className="flex items-center justify-center h-screen bg-Black">
-        <PuffLoader
-  color="#7E4AE7"
-  size={100}
-/>
+          <PuffLoader color="#7E4AE7" size={100} />
         </div>
       ) : (
-        <div className="relative w-full min-h-screen">
-          <div className="fixed inset-0 -z-10">
-            <div className="absolute inset-0 z-0 overflow-hidden">
-              <video
-                ref={videoRef}
-                className="absolute top-0 left-0 w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-              >
-                <source src="./video.mp4" type="video/mp4" />
-              </video>
-            </div>
+        <div className="relative w-full min-h-screen bg-Black">
+          <div className="fixed inset-0 z-0 flex items-center justify-center lg:mx-200">
+          <div className="w-[600px] h-[00px] absolute top-1/2 bg-transparent shadow-2xl shadow-red-500 animate-float1 rounded-full"></div>
+          <div className="w-96 h-96 absolute top-96  bg-transparent shadow-2xl shadow-orange-500 rounded-full animate-float1"></div>
+
+          <div className="w-[600px] h-[600px] absolute top-1/2 bg-transparent shadow-2xl shadow-green-500 animate-float1 rounded-full"></div>
+          <div className="w-96 h-96 absolute top-96  bg-transparent shadow-2xl shadow-purple-500 rounded-full animate-float1"></div>
+
+          <div className="w-[600px] h-[600px] absolute top-1/2 bg-transparent shadow-2xl shadow-orange-500 animate-float3 rounded-full"></div>
+          <div className="w-96 h-96 absolute top-96  bg-transparent shadow-2xl shadow-red-500 rounded-full animate-float3"></div>
+        
           </div>
 
           <div className="relative z-10">
@@ -58,9 +46,9 @@ const App = () => {
               <Route path="/" element={<HomeComponent />} exact />
               <Route path="/AboutUsPage" element={<AboutUsPageComponent />} />
               <Route path="/ServicesPage" element={<ServicesPageComponent />} />
-              <Route path="/WorkPage" element={<WorkPageComponent/>} />
-              <Route path="/PricingPage" element={<PricingPageComponent/>} />
-              <Route path="/ContactPage" element={<ContactUsPageComponent/>} />
+              <Route path="/WorkPage" element={<WorkPageComponent />} />
+              <Route path="/PricingPage" element={<PricingPageComponent />} />
+              <Route path="/ContactPage" element={<ContactUsPageComponent />} />
             </Routes>
             <FooterComponent />
           </div>

@@ -32,7 +32,7 @@ const NavbarComponent = () => {
             <div className="md:flex md:items-center md:gap-12">
               <Link to={"/"} className="flex items-center">
                 <h1 className="text-2xl font-medium text-White font-sora">
-                  Creative.<span className="text-Primary text-xl ml-1">. . .</span>
+                Developer.
                 </h1>
               </Link>
             </div>
